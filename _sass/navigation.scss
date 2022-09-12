@@ -3,21 +3,25 @@
  * *******************************/
 .nav {
     align-items: center;
-    background-color: $maroon;
+    background-color: $pinka;
     border-radius: $small-corner;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 350px;
     padding: $item-padding-medium;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     width: calc(100% - 20px);
+    z-index: 20;
 
     .menu {
         display: flex;
         align-items: center;
 
         .title {
-            color: $font-highlight;
+            color: $maroon;
             font-family: 'ChakraPetch';
             font-weight: bold;
             font-size: 2em;
@@ -26,7 +30,7 @@
 
         a {
             font-family: 'Exo 2';
-            color: $font-highlight;
+            color: $maroon;
             text-decoration: none;
             margin: $item-margin-medium;
         }

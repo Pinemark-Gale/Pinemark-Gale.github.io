@@ -2,22 +2,39 @@
  * of a webpage.
  * *******************************/
  body {
-    background:
-    radial-gradient(circle farthest-side at 0% 50%,$dark-background 23.5%,rgba(240,166,17,0) 0)21px 30px,
-    radial-gradient(circle farthest-side at 0% 50%,$dark-background-highlight 24%,rgba(240,166,17,0) 0)19px 30px,
-    linear-gradient($dark-background 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,$dark-background 0)0 0,
-    linear-gradient(150deg,$dark-background 24%, $dark-background-highlight 0, $dark-background-highlight 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,$dark-background-highlight 0,$dark-background-highlight 76%,$dark-background 0)0 0,
-    linear-gradient(30deg, $dark-background 24%,$dark-background-highlight 0, $dark-background-highlight 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,$dark-background-highlight 0,$dark-background-highlight 76%,$dark-background 0)0 0,
-    linear-gradient(90deg,$dark-background-highlight 2%,$dark-background 0,$dark-background 98%,$dark-background 0%)0 0 $dark-background;
-    background-size: 40px 60px;
-    padding: 20px;
+   //  background:
+   //  radial-gradient(circle farthest-side at 0% 50%,$dark-background 23.5%,rgba(240,166,17,0) 0)21px 30px,
+   //  radial-gradient(circle farthest-side at 0% 50%,$dark-background-highlight 24%,rgba(240,166,17,0) 0)19px 30px,
+   //  linear-gradient($dark-background 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,$dark-background 0)0 0,
+   //  linear-gradient(150deg,$dark-background 24%, $dark-background-highlight 0, $dark-background-highlight 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,$dark-background-highlight 0,$dark-background-highlight 76%,$dark-background 0)0 0,
+   //  linear-gradient(30deg, $dark-background 24%,$dark-background-highlight 0, $dark-background-highlight 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,$dark-background-highlight 0,$dark-background-highlight 76%,$dark-background 0)0 0,
+   //  linear-gradient(90deg,$dark-background-highlight 2%,$dark-background 0,$dark-background 98%,$dark-background 0%)0 0 $dark-background;
+   //  background-size: 40px 60px;
+   padding: 20px;
+ }
+
+ .background-image {
+   background-image: url(images/forest_background.png);
+   background-position: center;
+   background-repeat: repeat;
+   background-size: cover;
+   display: block;
+   filter: blur(4px);
+   height: 102%;
+   left: -1%;
+   position: fixed;
+   top: -1%;
+   width: 102%;
+   z-index: 0;
  }
 
  .content {
-    background-color: $maroon;
+    background-color: $maroona;
     border-radius: $small-corner;
     color: $font-main;
     padding: $item-padding-medium;
     margin-bottom: $item-margin-large;
     margin-top: $item-margin-large;
+    position: relative;
+    z-index: 10;
  }
