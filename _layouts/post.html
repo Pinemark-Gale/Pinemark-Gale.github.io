@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<h1 class="page-header">{{ page.title }}</h1>
+
+<article class="post-preview">
+
+  <h2 class="title"><a>Written on {{ page.date | date: "%B %e, %Y" }} by {{ page.author }}</a></h2>
+  <h3 class="subtitle">Category:
+    {% for category in page.categories %}
+      <span class="category">{{ category }}</span>
+    {% endfor %}
+  </h3>
+
+  <div class="horizontal-body">
+    {{ content }}
+  </div>
+
+</article>

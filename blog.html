@@ -5,7 +5,7 @@ title: Blog
 
 <h1 class="page-header">Blog Posts</h1>
 
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:50 %}
   <article class="post-preview">
 
     <h2 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>

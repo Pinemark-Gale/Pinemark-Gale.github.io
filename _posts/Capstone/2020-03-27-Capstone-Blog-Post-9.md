@@ -1,0 +1,15 @@
+---
+layout: post
+title: Capstone Blog Post 9
+author: Gale Proulx
+published: true
+categories: Capstone
+---
+
+Within the past month a lot has happened both in the world and in this capstone. No research is in complete isolation of the environment around it, thus the recent events around the world have also had a significant impact on how the rest of this capstone will progress. While I find that I did not make as much progress as I previously hoped to accomplish, considering the current circumstances of the COVID-19 outbreak I would consider my current work satisfactory.
+
+Over the past couple of weeks, the United States has ramped up response to the COVID-19 pandemic. What this means for the nation is a societal shift where self-isolation is expected and statewide mandates for reducing gatherings is mandatory. From a social perspective, person-to-person contact is an unacceptable risk if it can be avoided. At the postsecondary level, colleges across the world are shutting down and operating remotely. This response has resulted in Champlain College campus being emptied of students. From the perspective of this capstone, the situation is not ideal. Even if the results of this capstone are being displayed online, there was hope that the impact of this research could benefit the Champlain College community. With the community spread out, this is much less likely to happen. Obviously this situation was unavoidable as students safety takes priority over anything else, but the aftermath isn't great for our research.
+
+In addition, the COVID-19 pandemic has delayed some progress as I have personally had to relocate to continue my work. As the semester closes everyone at Champlain College is finding it hard to cram the last seven weeks of the semester into six weeks. Within the past month, I have personally been able to write the code to dynamically create new visualizations, reformat these visualizations, clean up code for data-preprocessing of the visualizations, and add this information to the updated ixanthology website. Now that each visualization can be created and formatted with only a couple of lines of code changed, it is much easier to start crafting a story that can reflect the information from the Clery Act data. Additionally, it is also easier to think about visualization accessibility so everyone has the opportunity to see what the data is telling.
+
+Looking at the research document, I have to finish Chapter 4 (now that I have almost-finalized graphs) and start Chapter 5. Even if this project is almost at an end, I do know what next steps I might want to take in order to continue this research. Making a tool to reformat the Clery Act data would help make individual research accessible to a much wider audience of students. Taking a deeper dive into the data would also be useful, potentially contacting other schools to find out why some data is incomplete. Now that the data is preprocessed, it would also be nice to take a deeper look at Champlain College's specific stats and see if the reports reinforce the narrative that is felt on campus.
