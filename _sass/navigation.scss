@@ -1,0 +1,43 @@
+/* All styling regarding the main
+ * navigation
+ * *******************************/
+.nav {
+    align-items: center;
+    background-color: $maroon;
+    border-radius: $small-corner;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 350px;
+    padding: $item-padding-medium;
+    width: calc(100% - 20px);
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        .title {
+            color: $font-highlight;
+            font-family: 'ChakraPetch';
+            font-weight: bold;
+            font-size: 2em;
+            text-decoration: none;
+        }
+
+        a {
+            font-family: 'Exo 2';
+            color: $font-highlight;
+            text-decoration: none;
+            margin: $item-margin-medium;
+        }
+
+        .logo {
+    
+            img {
+                border-radius: $small-corner;
+                height: 50px;
+                width: 50px;
+            }
+        }    
+    }
+}

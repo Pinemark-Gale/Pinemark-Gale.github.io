@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% if page.title %}{{ page.title }} {% endif %}</title>
+
+    {% include meta.html %}
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="menu">
+        <div class="logo">
+          <a href="/"><img src="/images/site-logo.png" alt="Woman in beanie playing violin."></a>
+        </div>
+        <a class="title" href="/">{{ site.title }}</a>
+      </div>
+
+      <div class="menu">
+        <a class="nav-link" href="/blog">Blog Posts</a>
+        <a class="nav-link" href="/about">About</a>
+      </div>
+
+    </nav>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+  </body>
+</html>

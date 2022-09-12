@@ -1,0 +1,40 @@
+/* Main Color Palette
+ * *******************************/
+
+/*** Main application colors. ***/
+$pink: #ffb5ac;
+$highlight-pink: #5d3f3d;
+$maroon: #77302e;
+$accent-gold:#5e4201;
+$dark-background: #201a1a;
+$dark-background-highlight: #322626;
+
+/*** Main application fonts. ***/
+@font-face {
+    font-family: "Exo 2";
+    src: url("fonts/Exo2-VariableFont_wght.ttf")
+}
+
+@font-face {
+    font-family: "ChakraPetch";
+    src: url("fonts/ChakraPetch-Regular.ttf")
+}
+
+/*** Font colors. ***/
+$font-main: #e4d7d5;
+$font-highlight: #e8ca90;
+
+/*** Border definitions. ***/
+$small-corner: 5px;
+$large-corner: 10px;
+$rounded-corner: 50px;
+
+/*** Margin definitions. ***/
+$item-margin-small: 5px;
+$item-margin-medium: 10px;
+$item-margin-large: 20px;
+
+/*** Padding definitions. ***/
+$item-padding-small: 5px;
+$item-padding-medium: 10px;
+$item-padding-large: 20px;
