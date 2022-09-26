@@ -26,9 +26,10 @@
             font-weight: bold;
             font-size: 2em;
             text-decoration: none;
+            margin: $item-margin-medium;
         }
 
-        a {
+        .link {
             font-family: 'Exo 2';
             color: $maroon;
             text-decoration: none;
@@ -42,6 +43,15 @@
                 height: 50px;
                 width: 50px;
             }
-        }    
+        }   
+        
+        .icon {
+
+            img {
+                border-radius: $large-corner;
+                height: 40px;
+                width: 40px;
+            }
+        }
     }
 }
