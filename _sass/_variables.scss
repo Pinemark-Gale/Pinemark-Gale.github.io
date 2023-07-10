@@ -8,8 +8,7 @@ $highlight-pink: #5d3f3d;
 $maroon: #77302e;
 $maroona: rgba(119, 48, 46, 0.95);
 $accent-gold:#5e4201;
-$dark-background: #201a1a;
-$dark-background-highlight: #322626;
+$whitea: #d4d4d4d5;
 
 /*** Main application fonts. ***/
 @font-face {
@@ -30,6 +29,7 @@ $font-highlight: #e8ca90;
 $small-corner: 5px;
 $large-corner: 10px;
 $rounded-corner: 50px;
+$box-shadow: rgba(0, 0, 0, 0.2);
 
 /*** Margin definitions. ***/
 $item-margin-small: 5px;
