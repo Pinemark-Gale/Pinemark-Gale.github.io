@@ -28,7 +28,8 @@ body {
   border-radius: $small-corner;
   box-shadow: $box-shadow;
   color: $font-main;
-  margin: $item-margin-large;
+  margin: auto;
+  max-width: 830px;
   position: relative;
   padding-bottom: $item-padding-large;
   z-index: 10;

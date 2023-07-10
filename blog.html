@@ -13,5 +13,13 @@ title: Blog
     <div class="horizontal-body">
       {{ post.excerpt }}
     </div>
+
+    <div class="post-footer">
+      <div class="category-container">
+        {% for category in post.categories %}
+          <div class="category"><a href="{{ site.baseurl }}/{{category}}">{{ category }}</a></div>
+        {% endfor %}      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </div>
   </article>
 {% endfor %}

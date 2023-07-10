@@ -6,6 +6,8 @@ layout: default
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+     
     <title>{% if page.title %}{{ page.title }} {% endif %}</title>
 
     {% include meta.html %}
@@ -16,7 +18,8 @@ layout: default
 
   <body>
     <div class="background-image"></div>
-    <nav class="header">
+
+    <header class="header">
       <div class="menu">
         <div class="logo">
           <a href="/"><img src="/images/site-logo.png" alt="Woman in beanie playing violin."></a>
@@ -30,15 +33,30 @@ layout: default
           <a href="https://github.com/Pinemark-Gale"><img src="/images/GitHub.png" alt="GitHub social media icon."></a>
         </div>
       </div>
-    </nav>
+    </header>
     
-    <a class="link" href="/blog">Blog Posts</a>
-    <a class="link" href="/about">About</a>
+    <nav class="main-navigation">
+      <a id="home" class="link" href="/">Home</a>
+      <a id="blog" class="link" href="/blog">Blog Posts</a>
+      <a id="about" class="link" href="/about">About</a>
+    </nav>
 
 
     <div class="content">
         {{ content }}
     </div>
+
+    <script type="text/javascript">
+      const page = window.location.href.split('/')[3];
+      
+      if (page == "") {
+        document.getElementById("home").classList.add("current-link");
+      } else {
+        document.getElementById(page).classList.add("current-link");
+      }
+
+
+    </script>
 
   </body>
 </html>
