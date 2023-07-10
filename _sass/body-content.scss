@@ -24,11 +24,83 @@ body {
 }
 
 .content {
-  background-color: $whitea;
+  background-color: $maroona;
   border-radius: $small-corner;
+  box-shadow: $box-shadow;
   color: $font-main;
-  padding: $item-padding-medium;
   margin: $item-margin-large;
   position: relative;
+  padding-bottom: $item-padding-large;
   z-index: 10;
+
+  .page-header {
+    background-color: $pinka;
+    border-top-left-radius: $small-corner;
+    border-top-right-radius: $small-corner;
+    color: $maroon;
+    font-family: "Exo 2";
+    margin: 0px;
+    padding: $item-padding-small;
+    padding-left: $item-padding-medium;
+    padding-right: $item-padding-medium;
+  }
+
+  .post-preview {
+    border-left: $pinka 5px solid;
+    margin: $item-margin-large;
+    padding: $item-padding-medium;
+    padding-top: $item-padding-small;
+    padding-bottom: $item-padding-small;
+
+    .title {
+      margin: 0px;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        font-family: "Exo 2";
+        font-weight: 250;
+        margin: 0px;
+        transition: $normal-transition;
+      }
+
+      a:hover {
+        color: $highlight-pink;
+        margin-left: 2px;
+        transition: $normal-transition;
+      }
+    }
+
+    .horizontal-body {
+      font-family: "ChakraPetch";
+    }
+
+    .post-footer {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        border: 1px solid $pinka;
+        border-radius: $small-corner;
+        color: $white;
+        padding: $item-padding-small;
+        text-decoration: none;
+        font-family: "ChakraPetch";
+        transition: $normal-transition;
+      }
+
+      a:hover {
+        border: 1px solid $highlight-pink;
+        border-radius: $large-corner;
+        color: $highlight-pink;
+        transition: $normal-transition;
+      }
+
+      .category-container {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+  }
+
 }
