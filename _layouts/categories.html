@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+
+
+<h1 class="page-header">{{ page.title }}</h1>
+
+{% for post in site.posts %}
+    {% if post.categories contains page.title %}
+        <article class="post-preview">
+
+            <a class="title" href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
+        
+            <div class="horizontal-body">
+            {{ post.excerpt }}
+            </div>
+        
+            <div class="post-footer">
+            {% for category in post.categories %}
+                <div class="category"><a href="{{ site.baseurl }}/category/{{category}}">{{ category }}</a></div>
+            {% endfor %}
+            </div>
+        </article>
+    {% endif %}
+{% endfor %}
