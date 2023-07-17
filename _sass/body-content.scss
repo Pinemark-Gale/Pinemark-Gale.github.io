@@ -51,25 +51,34 @@ body {
     margin: $item-margin-large;
     padding: $item-padding-medium;
     padding-top: $item-padding-small;
-    padding-bottom: $item-padding-small;
+    padding-bottom: $item-padding-medium;
 
-    .title {
-      margin: 0px;
+    .title {      
+      color: $white;
+      font-family: "Exo 2";
+      font-weight: 250;
+      text-decoration: none;
 
-      a {
-        color: $white;
-        text-decoration: none;
-        font-family: "Exo 2";
-        font-weight: 250;
+      h2 {
         margin: 0px;
+        margin-left: -$item-padding-medium;
+        margin-top: -$item-padding-small;
+        padding-left: $item-padding-medium;
         transition: $normal-transition;
       }
 
-      a:hover {
-        color: $highlight-pink;
-        margin-left: 2px;
+      h2:hover {
+        background-color: $pinka;
+        border-top-right-radius: $small-corner;
+        border-bottom-right-radius: $small-corner;  
         transition: $normal-transition;
+
       }
+    }
+
+    .title:hover {
+      color: $maroona;
+      transition: $normal-transition;
     }
 
     .horizontal-body {
@@ -91,9 +100,9 @@ body {
       }
 
       a:hover {
-        border: 1px solid $highlight-pink;
+        background-color: $pinka;
         border-radius: $large-corner;
-        color: $highlight-pink;
+        color: $maroona;
         transition: $normal-transition;
       }
 

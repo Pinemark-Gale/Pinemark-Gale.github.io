@@ -3,23 +3,34 @@ layout: default
 title: Blog
 ---
 
-<h1 class="page-header">Blog Posts</h1>
+<h1 class="page-header">Latest Posts</h1>
 
-{% for post in site.posts limit:50 %}
-  <article class="post-preview">
+{% assign limit = 5 %}
+{% assign counter = 0 %}
 
-    <h2 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+{% for post in site.posts %}
+  {% unless post.categories contains "Portfolio" %}
+    <article class="post-preview">
 
-    <div class="horizontal-body">
-      {{ post.excerpt }}
-    </div>
+      <a class="title" href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
 
-    <div class="post-footer">
-      <div class="category-container">
+      <div class="horizontal-body">
+        {{ post.excerpt }}
+      </div>
+
+      <div class="post-footer">
         {% for category in post.categories %}
           <div class="category"><a href="{{ site.baseurl }}/{{category}}">{{ category }}</a></div>
-        {% endfor %}      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </div>
-  </article>
+        {% endfor %}
+      </div>
+    </article>
+    {% assign counter = counter | plus:1 %}
+  {% endunless %}
+  {% if counter > 5 %}
+    {% break %}
+  {% endif %}
 {% endfor %}
+
+<article class="post-preview">
+  <a class="title" href="{{ site.baseurl }}/archive"><h2>See All Posts</h2></a>
+</article>

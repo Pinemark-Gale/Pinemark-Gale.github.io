@@ -8,18 +8,16 @@ title: Home
 {% for post in site.posts limit:5 %}
   <article class="post-preview">
 
-    <h2 class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <a class="title" href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
 
     <div class="horizontal-body">
       {{ post.excerpt }}
     </div>
 
     <div class="post-footer">
-      <div class="category-container">
-        {% for category in post.categories %}
-          <div class="category"><a href="{{ site.baseurl }}/{{category}}">{{ category }}</a></div>
-        {% endfor %}      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      {% for category in post.categories %}
+        <div class="category"><a href="{{ site.baseurl }}/{{category}}">{{ category }}</a></div>
+      {% endfor %}
     </div>
   </article>
 {% endfor %}
