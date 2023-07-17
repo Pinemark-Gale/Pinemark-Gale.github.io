@@ -113,4 +113,67 @@ body {
     }
   }
 
+  .listing-container {
+    border-left: $pinka 5px solid;
+    margin: $item-margin-large;
+    padding: $item-padding-medium;
+    padding-top: $item-padding-small;
+    padding-bottom: $item-padding-medium;
+
+    .category {      
+      color: $white;
+      font-family: "Exo 2";
+      font-weight: 250;
+      text-decoration: none;
+      
+      .title {
+        margin: 0px;
+        margin-left: -$item-padding-medium;
+        margin-top: -$item-padding-small;
+        padding-left: $item-padding-medium;
+        transition: $normal-transition;
+      }
+
+      .title:hover {
+        background-color: $pinka;
+        border-top-right-radius: $small-corner;
+        border-bottom-right-radius: $small-corner;  
+        transition: $normal-transition;
+
+      }
+    }
+
+    .category:hover {
+      color: $maroona;
+      transition: $normal-transition;
+    }
+
+    .listing {
+      color: $white;
+      font-family: 'ChakraPetch';
+      text-decoration: none;
+      transition: $normal-transition;
+      
+      h3 {
+        padding-left: $item-padding-medium;
+        margin: $item-margin-small;
+        transition: $normal-transition;
+      }
+
+      h3:hover {
+        background-color: $pinka;
+        border-top-right-radius: $small-corner;
+        border-bottom-right-radius: $small-corner;  
+        transition: $normal-transition;
+      }
+    }
+
+    .listing:hover {
+      color: $maroona;
+      transition: $normal-transition;
+    }
+  }
+  
+
+
 }
