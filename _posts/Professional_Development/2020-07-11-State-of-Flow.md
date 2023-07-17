@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State of Flow
-author: Gale Proulx
+author: Gale Striker
 published: true
 categories:
   - Professional Development

@@ -46,6 +46,18 @@ body {
     padding-right: $item-padding-medium;
   }
 
+  .page-subheader {
+    background-color: $pinka;
+    border-bottom-right-radius: $small-corner;
+    color: $maroon;
+    font-family: "Exo 2";
+    margin: 0px;
+    padding: $item-padding-small;
+    padding-left: $item-padding-medium;
+    padding-right: $item-padding-medium;
+
+  }
+
   .post-preview {
     border-left: $pinka 5px solid;
     margin: $item-margin-large;

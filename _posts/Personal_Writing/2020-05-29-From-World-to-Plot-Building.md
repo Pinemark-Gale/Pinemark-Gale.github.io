@@ -1,7 +1,7 @@
 ---
 layout: post
 title: From World to Plot Building
-author: Gale Proulx
+author: Gale Striker
 published: true
 categories:
   - Personal Writing

@@ -1,5 +1,5 @@
 ---
 layout: categories
 name: Professional Development
-description: A collection of journal entries taken when completing my capstone project in my senior year of college.
+description: An online professional journal of my experiences from job to job.
 ---

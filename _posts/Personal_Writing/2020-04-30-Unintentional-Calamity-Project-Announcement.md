@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unintentional Calamity Project Announcement
-author: Gale Proulx
+author: Gale Striker
 published: true
 categories:
   - Personal Writing

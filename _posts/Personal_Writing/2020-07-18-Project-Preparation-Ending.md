@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Project Preparation Ending
-author: Gale Proulx
+author: Gale Striker
 published: true
 categories:
   - Personal Writing

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Draft Update
-author: Gale Proulx
+author: Gale Striker
 published: true
 categories:
   - Personal Writing

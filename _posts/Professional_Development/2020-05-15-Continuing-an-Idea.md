@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Continuing an Idea"
-author: Gale Proulx
+author: Gale Striker
 published: true
 categories:
   - Professional Development

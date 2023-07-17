@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Story Technicalities
-author: Gale Proulx
+author: Gale Striker
 published: true
 categories:
   - Personal Writing

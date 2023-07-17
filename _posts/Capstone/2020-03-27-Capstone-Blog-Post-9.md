@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Capstone Blog Post 9
-author: Gale Proulx
+author: Gale Striker
 published: true
 categories: Capstone
 ---

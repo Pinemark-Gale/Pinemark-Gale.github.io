@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sidetracked Progress
-author: Gale Proulx
+author: Gale Striker
 published: true
 categories:
   - Professional Development
