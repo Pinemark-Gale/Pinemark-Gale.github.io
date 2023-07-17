@@ -3,25 +3,23 @@ layout: default
 title: Home
 ---
 
-<h1 class="page-header">Latest Posts</h1>
+<h1 class="page-header">Portfolio</h1>
 
-{% for post in site.posts limit:5 %}
-  <article class="post-preview">
+{% for post in site.posts %}
+  {% if post.categories contains 'Portfolio' %}
+    <article class="post-preview">
 
-    <a class="title" href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
+      <a class="title" href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
 
-    <div class="horizontal-body">
-      {{ post.excerpt }}
-    </div>
+      <div class="horizontal-body">
+        {{ post.excerpt }}
+      </div>
 
-    <div class="post-footer">
-      {% for category in post.categories %}
-        <div class="category"><a href="{{ site.baseurl }}/category/{{category}}">{{ category }}</a></div>
-      {% endfor %}
-    </div>
-  </article>
+      <div class="post-footer">
+        {% for category in post.categories %}
+          <div class="category"><a href="{{ site.baseurl }}/category/{{category}}">{{ category }}</a></div>
+        {% endfor %}
+      </div>
+    </article>
+  {% endif %}
 {% endfor %}
-
-<article class="post-preview">
-    <h2 class="title"><a href="{{ site.baseurl }}/library">See All Posts</a></h2>
-</article>

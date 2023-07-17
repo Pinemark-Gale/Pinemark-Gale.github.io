@@ -2,12 +2,10 @@
 layout: default
 ---
 
-
-
-<h1 class="page-header">{{ page.title }}</h1>
+<h1 class="page-header">{{ page.name }}</h1>
 
 {% for post in site.posts %}
-    {% if post.categories contains page.title %}
+    {% if post.categories contains page.name %}
         <article class="post-preview">
 
             <a class="title" href="{{ site.baseurl }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
@@ -18,7 +16,8 @@ layout: default
         
             <div class="post-footer">
             {% for category in post.categories %}
-                <div class="category"><a href="{{ site.baseurl }}/category/{{category}}">{{ category }}</a></div>
+                {% assign catURL = category | replace: ' ', '-' %}
+                <div class="category"><a href="{{ site.baseurl }}/category/{{ catURL }}">{{ category }}</a></div>
             {% endfor %}
             </div>
         </article>

@@ -7,9 +7,10 @@ title: Blog Archive
 
 {% for category in site.categories %}
   <article class="listing-container">
-    <a class="category" href="/category/{{ category.title }}"><h2 class="title">{{ category.title }}</h2></a>
+    <a class="category" href="{{ category.url }}"><h2 class="title">{{ category.title }}</h2></a>
     <a name="{{ category_name | slugize }}"></a>
-      {% for post in site.categories[category.title] %}
+      {% assign catPosts = site.posts | where: "categories", category.name %}
+      {% for post in catPosts %}
         <a class="listing" href="{{ site.baseurl }}{{ post.url }}"><h3>{{post.title}}</h3></a>
       {% endfor %}
   </article>

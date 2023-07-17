@@ -20,7 +20,8 @@ title: Blog
 
       <div class="post-footer">
         {% for category in post.categories %}
-          <div class="category"><a href="{{ site.baseurl }}/{{category}}">{{ category }}</a></div>
+          {% assign catURL = category | replace: ' ', '-' %}
+          <div class="category"><a href="{{ site.baseurl }}/category/{{ catURL }}">{{ category }}</a></div>
         {% endfor %}
       </div>
     </article>
