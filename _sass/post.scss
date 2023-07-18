@@ -1,0 +1,18 @@
+.post {
+    font-family: 'ChakraPetch';
+    padding: $item-padding-medium;
+
+    a {
+        color: $white;
+    }
+
+    .title {
+        margin: 0px;
+    }
+
+    .subtitle {
+        margin: 0px;
+        padding-bottom: $item-padding-small;
+        padding-top: $item-padding-small;
+    }
+}
