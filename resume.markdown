@@ -9,9 +9,11 @@ permalink: /resume/
 
 # Who is Zoey Amity Gale Striker?
 
-Officially I'm a Data Scientist interested in ethics and writing with a nack for using open source software. With my background in IT Support, I'm also able to not only analyze data, but I can build a server on which to deploy models without the use of Data Bricks or other software commonly sold to deploy machine learning models.
+Officially I'm a Data Scientist interested in ethics and writing with a nack for using open source software. With my background in IT Support, I'm also able to not only analyze data, but I can build a server on which to deploy models without the use of Data Bricks or other software commonly sold to deploy machine learning models. Heck, I can even build a website to interface with those machine learning models and allow folks in other professions to interact with a model without knowing Python!
 
-Unofficially, my interests vary widely. I love teaching, writing, storytelling, singing, playing video games, and hiking. The world is full of wonders and I want to see them all. I am truly the jack of all trades, master of none. This doesn't mean I can't achieve a high level of proficiency, it does mean I don't bother learning a topic in depth on my own unless it is needed. Hence my diverse skillset.
+While I do cover a wide array of tasks needed in the realm of data science, I still don't know everything; that's why I'm a quick study. This field is ever-evolving, so it can be quite hard to have all the knowledge needed for every job.
+
+Unofficially, my interests vary widely. I love teaching, writing, storytelling, singing, playing video games, and hiking. The world is full of wonders and I want to see them all.
 
 # What does a data scientist do?
 
@@ -21,7 +23,7 @@ I am the person who can look at a companies database and find the story behind t
 
 This website is my portfolio. This is where I post logs of what projects I'm currently working on or update my own information so the internet can see it.
 
-I also included my Email, GitHub, LinkedIn, and Twitter account just in case someone wants to see my work or get in contact with me.
+I also included my [Github](https://github.com/Pinemark-Gale) and [LinkedIn](https://www.linkedin.com/in/galestriker/) account just in case someone wants to see my work or get in contact with me.
 
 # Who's hosting this website?
 
