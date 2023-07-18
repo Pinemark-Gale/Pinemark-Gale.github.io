@@ -1,10 +1,13 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Resume
+permalink: /resume/
 ---
 
-# Who is Gale Striker?
+[Download Resume Here]({{ site.baseurl }}/pdfs/Zoey_Striker_Resume.pdf) | Go to [LinkedIn](https://www.linkedin.com/in/galestriker/) for my full work history!
+<embed src="{{ site.baseurl }}/pdfs/Zoey_Striker_Resume.pdf" type="application/pdf"/>
+
+# Who is Zoey Amity Gale Striker?
 
 Officially I'm a Data Scientist interested in ethics and writing with a nack for using open source software. With my background in IT Support, I'm also able to not only analyze data, but I can build a server on which to deploy models without the use of Data Bricks or other software commonly sold to deploy machine learning models.
 
