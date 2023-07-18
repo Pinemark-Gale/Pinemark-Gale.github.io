@@ -34,11 +34,22 @@ layout: default
         </div>
       </div>
     </header>
+    <div id="breadcrumbs" class="breadcrumbs">
+      {% assign crumbs = page.url | split: '/' %}
+      <a href="/">home</a>
+      {% for crumb in crumbs offset: 1 %}
+        {% if forloop.last %}
+          /{{ page.title | downcase }}
+        {% else %}
+          /<a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace: '%20', '-' | downcase }}{% endfor %}">{{ crumb | replace: '%20', '-' | downcase }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
     
     <nav class="main-navigation">
       <a id="home" class="link" href="/">Home</a>
       <a id="blog" class="link" href="/blog">Blog</a>
-      <a id="archive" class="link" href="/archive">Archive</a>
+      <a id="category" class="link" href="/category">Categories</a>
       <a id="about" class="link" href="/about">About</a>
     </nav>
 

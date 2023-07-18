@@ -33,6 +33,9 @@ linkedin_url:  www.linkedin.com/in/galestriker
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-titleize
+
+gems: ['jekyll-titleize']
 
 sass:
   style: :compressed
@@ -41,6 +44,9 @@ collections:
   categories:
     output: true
     permalink: category/:title/
+  posts:
+    output: true
+    permalink: category/:categories/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.

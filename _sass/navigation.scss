@@ -15,7 +15,6 @@
     padding-bottom: $item-padding-small;
     position: relative;
     margin-top: $item-margin-large;
-    margin-bottom: $item-margin-large;
     width: calc(100% - 40px);
     z-index: 20;
 
@@ -87,4 +86,19 @@
         border-bottom: $white 2px solid;
     }
 
+}
+
+.breadcrumbs {
+    color: $whitea;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Exo 2";
+    padding-left: 130px;
+    position: relative;
+    z-index: 15;
+
+    a {
+        color: $whitea;
+        text-decoration: none;
+    }
 }

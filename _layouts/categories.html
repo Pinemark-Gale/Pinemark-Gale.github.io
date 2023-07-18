@@ -19,7 +19,7 @@ layout: default
             <div class="post-footer">
             {% for category in post.categories %}
                 {% assign catURL = category | replace: ' ', '-' %}
-                <div class="category"><a href="{{ site.baseurl }}/category/{{ catURL }}">{{ category }}</a></div>
+                <div class="category"><a href="{{ site.baseurl }}/category/{{ catURL | downcase }}">{{ category }}</a></div>
             {% endfor %}
             </div>
         </article>
