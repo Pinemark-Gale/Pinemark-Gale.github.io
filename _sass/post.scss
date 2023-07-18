@@ -1,6 +1,49 @@
+.post-data {
+    background-color: $dark-pink;
+    color: $maroon;
+    font-family: "Exo 2";
+    margin: 0px;
+    padding: $item-padding-small;
+    padding-left: $item-padding-medium;
+    padding-right: $item-padding-medium;
+}
+
+.post-categories {
+    background-color: $dark-pink;
+    color: $maroon;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom-right-radius: $small-corner;
+    margin: 0px;
+    padding-bottom: $item-padding-small;
+    padding-left: $item-padding-medium;
+    padding-right: $item-padding-medium;
+    padding-top: $item-padding-small;
+
+    a {
+        color: $maroon;
+        text-decoration: none;
+    }
+
+    .category {
+        border: 1px solid $maroon;
+        border-radius: $small-corner;
+        padding-left: $item-padding-small;
+        padding-right: $item-padding-small;
+        transition: $normal-transition;
+    }
+
+    .category:hover {
+        background-color: $maroon;
+        color: $whitea;
+        transition: $normal-transition;
+    }
+
+}
+
 .post {
     font-family: 'ChakraPetch';
-    padding: $item-padding-medium;
+    padding: $item-padding-large;
 
     a {
         color: $white;
@@ -8,11 +51,5 @@
 
     .title {
         margin: 0px;
-    }
-
-    .subtitle {
-        margin: 0px;
-        padding-bottom: $item-padding-small;
-        padding-top: $item-padding-small;
     }
 }
