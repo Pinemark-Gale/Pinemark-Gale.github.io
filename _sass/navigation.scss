@@ -8,7 +8,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     left: 0;
-    min-width: 350px;
     padding-left: $item-padding-large;
     padding-right: $item-padding-large;
     padding-top: $item-padding-small;
@@ -22,7 +21,7 @@
         display: flex;
         align-items: center;
         height: 50px;
-
+        
         .title {
             color: $maroon;
             font-family: 'ChakraPetch';
@@ -30,7 +29,7 @@
             font-size: 2em;
             text-decoration: none;
             margin: $item-margin-medium;
-        }
+        }       
 
         .link {
             font-family: 'Exo 2';
@@ -94,6 +93,7 @@
     flex-wrap: wrap;
     font-family: "Exo 2";
     padding-left: 130px;
+    padding-right: $item-padding-small;
     position: relative;
     z-index: 15;
 
@@ -102,3 +102,14 @@
         text-decoration: none;
     }
 }
+
+@media (max-width: $breakpoint-phone) {
+    .header .menu .logo {
+        display: none;
+    }
+
+    .breadcrumbs {
+        padding-left: $item-padding-large;
+        padding-right: $item-padding-large;
+    }
+} 
