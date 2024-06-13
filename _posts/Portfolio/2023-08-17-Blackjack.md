@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blackjack
-author: Gale Striker
+author: Zoey Amity Gale Striker
 published: true
 categories:
   - Portfolio
